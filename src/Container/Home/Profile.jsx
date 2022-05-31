@@ -1,5 +1,6 @@
 import React from "react";
 import {TypingName} from './TypingName';
+
 import s from "./Profile.module.css";
 
 export const Profile = () => {

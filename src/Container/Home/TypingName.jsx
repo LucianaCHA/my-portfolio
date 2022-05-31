@@ -6,7 +6,7 @@ export const TypingName = () => {
     <>
 
       <ReactTypingEffect
-        text={['Enthusiastic Dev 💙','Full Stack Developer 💻', 'PERN Stack Dev 📌','React Dev 📌' ]}
+        text={['Curious Dev 💙','Full Stack  💻', 'PERN Stack Dev 📌','React Dev 📌' ]}
         cursorRenderer={cursor => <h1>{cursor}</h1>}
         displayTextRenderer={(text, i) => {
           return (

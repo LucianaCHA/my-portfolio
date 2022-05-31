@@ -52,10 +52,9 @@ export const Profile = () => {
                 Get CV
               </button>
             </a>
-
-
           </div>
         </div>
+        
         <div className={s.profilePicture}>
           <div className={s.profilePictureBackground}>
 

@@ -1,0 +1,30 @@
+import React from 'react';
+import ReactTypingEffect from 'react-typing-effect';
+
+export const TypingName = () => {
+  return (
+    <>
+
+      <ReactTypingEffect
+        text={['Enthusiastic Dev 💙','Full Stack Developer 💻', 'PERN Stack Dev 📌','React Dev 📌' ]}
+        cursorRenderer={cursor => <h1>{cursor}</h1>}
+        displayTextRenderer={(text, i) => {
+          return (
+            <h1>
+              {text.split('').map((char, i) => {
+                const key = `${i}`;
+                return (
+                  <span
+                    key={key}
+                    style={i%2 === 0 ? { color: 'magenta'} : {}}
+                  >{char}</span>
+                );
+              })}
+            </h1>
+          );
+        }}        
+      />
+    </>
+  );
+};
+

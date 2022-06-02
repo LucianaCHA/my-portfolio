@@ -10,14 +10,30 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 70%;
+    width: 90%;
     color: var(--white);
 }
 
-.header-logo{
-    font-size: 50px;
-    font-family: 'Poppins ExtraBold, sans-serif';
-    color: var(--white);
+.header-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-top: 50px;
+    background-image: url('../../../assets/Header/logo.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    height: 40%;
+    width: 8%;
+    
+}
+
+.header-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 2s ease-out;
 }
 
 .header-options{
@@ -31,18 +47,25 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
+    margin-right: 20px;
+    margin-left: 30px;
 }
-.header-hamburguer{
+.header-hamburguer , .show-hamburguer-options{
+    opacity: 0; 
+    margin-top: 120px;
+    font-size: 30px;
     color: var(--white);
 }
 
-.header-option-separator{
-    margin-left: 0 50px 0 0;
+/* .header-option-separator{
+    margin: 0 50px 0 0px;
     color: var(--white);
-}
+} */
 
-.selected-header-option{
-    color: var(--primary);
+.selected-header-option {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-orange);
 }
 
 @media only screen and (max-width: 1100px){
@@ -53,6 +76,12 @@
 @media only screen and (max-width: 970px){
     .header-hamburguer{
         display: block;
+        opacity: 1;
+        margin: 0 40px;
+       
+    }
+    .header-logo{
+        display: none;
     }
     
     .header-parent{
@@ -70,7 +99,7 @@
         width: 100%;
         height: 100vh;
         justify-content: space-around;
-        background-color: aquamarine;
+        background-color: var(--blue);
         z-index: 1000;
         opacity: 0.8;    
         transition: all 0.8s ease-out;

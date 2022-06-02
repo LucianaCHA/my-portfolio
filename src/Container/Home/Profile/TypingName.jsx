@@ -7,7 +7,7 @@ export const TypingName = () => {
     <>
       <ReactTypingEffect
       
-        text={['Curious Dev 💙','Full Stack  💻', 'PERN Stack','React Dev' ]}
+        text={['Curious Dev 💙','Full Stack 💻', 'PERN Stack','React Dev' ]}
         cursorRenderer={cursor => <h1>{cursor}</h1>}
         displayTextRenderer={(text, i) => {
           return (
@@ -17,7 +17,7 @@ export const TypingName = () => {
                 return (
                   <span                     
                     key={key}
-                    style={i%2 === 0 ? { color: 'magenta'} : {}}
+                    style={i%2 === 0 ? { color: 'violet'} : {}}
                   >{char}</span>
                 );
               })}

@@ -1,16 +1,17 @@
 :root{
-  --light-blue : #e28cf3;
-  --light-blue-shadow:  rgb(69 211 255 / 27%);
-  --sea-green: #0ABEAD;
-  --sea-green-dark: #0CBFAE;
-  --sea-green-extra-dark: #09BEAD;
-  --sea-green-shadow: rgba(11, 190, 173,0.4);
-  --header-hamburger-background : rgba(11, 190, 173,0.8);
-  --orange: #bc00bc;
-  --dark-orange: #520752;
-  --orange-shadow: rgba(64, 23, 245, 0.153);
+  --bg : #2b013b;
+  --bg-shadow:  rgba(174, 159, 185, 0.27);
+  --primary: #570c43;
+  --secondary: #8f065a;
+  --dark: #3e0227;
+  --blue: rgba(83, 58, 226, 0.4);
+  --header-hamburger-background : rgba(43, 1, 59, 0.8);
+  --lavande: #ab90f0;
+  --flower: #520752;
+  --flower-shadow: rgba(134, 187, 210, 0.153);
   --white: #ffffff;
   --black: #333333;
+  --dark-orange: #ff5823;
   --disabled-btn: #09bead7a;
   --error-message:  #e44f4fd1;
   --toast-error: #e44f4ffa;

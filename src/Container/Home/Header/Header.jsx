@@ -4,6 +4,7 @@ import {TOTAL_SCREENS, GET_SCREEN_INDEX} from '../../../utilities/commonUtils';
 import ScrollService from '../../../utilities/ScrollService';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import './Header.css';
 
 
@@ -29,19 +30,19 @@ export default function Header() {
                 //acá el click es lo que activa el cambio de pantallla! 
                 onClick= {() => switchScreen(i, screen)}>
                 {/* //esto es lo que renderiza _ el name de la pantalla que tengo indicado en el objeto de pantalñlas */}
-                <span>{screen.screen_name}</span>  
+                <span> {screen.screen_name}   </span>  
                 </div>)
             })
         )
     }
     const optionsClass = (index) =>{
     let classes = 'header-option';
-    if(index < TOTAL_SCREENS.length -1 )
-        classes += 'header-option-separator';
+    if(index < TOTAL_SCREENS.length-1 )
+        classes += ' header-option-separator';
     if (selectedScreen === index)
     //acá puedo destacar lo que está clickeado osea la screen que veo
-        classes += 'selected-header-option';
-    return;
+        classes += ' selected-header-option';
+    return classes;
 }
 
 const switchScreen = (index, screen) =>{
@@ -64,7 +65,7 @@ const switchScreen = (index, screen) =>{
                     <FontAwesomeIcon className='header-hamburguer-bars' icon={faBars} />
                 </div>
                 <div className='header-logo'>
-                    <span>LULADEV</span>
+
                 </div>
                 <div className={headerOptions
                 ? 'header-options show-hamburguer-options' 

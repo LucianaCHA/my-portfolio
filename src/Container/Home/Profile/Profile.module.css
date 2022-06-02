@@ -1,5 +1,5 @@
 .profileContainer {
-    margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -31,7 +31,7 @@
     
 }
 .primaryText{
-    color: (--white);
+    color: var(--white);
 }
 
 .highligthedText{
@@ -57,6 +57,7 @@
     height: 380px;
     width: 380px;
     margin: 0 0px 0 100px;
+    
 
 }
 
@@ -110,6 +111,9 @@
     }
 }
 @media screen and (max-width: 800px) {
+    .profileContainer{
+    top : 0
+    }
     .profilePicture{
         margin: 0;
         height: 320px;

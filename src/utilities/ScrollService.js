@@ -9,11 +9,11 @@ export default class ScrollService {
 
 
     constructor() {
-        window.addEventListener('scroll', this.checkCurrentScreenUnderViewPort);
+        window.addEventListener("scroll", this.checkCurrentScreenUnderViewPort);
     }
     scrollToHireMe = () => {
         let contactMeScreen = document.getelementById('Contact Me');
-        if(!contactMeScreen)return;
+        if(!contactMeScreen) return;
         contactMeScreen.scrollIntoView({behavior: 'smooth'});
     }
     scrollToHome = () => {
@@ -31,6 +31,7 @@ export default class ScrollService {
         let completellyVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
 
         switch(type){
+
             case 'partial':
                 return partiallyVisible;
 
@@ -43,14 +44,15 @@ export default class ScrollService {
 
 }
 
-checkCurrentScreenUnderViewPort = (e) =>{
+checkCurrentScreenUnderViewPort = (e) => {
     if(!e || Object.keys(e).length < 1 )
     return;
     for(let screen of TOTAL_SCREENS){
-        let screenFromDOM = document.getElementById(screen.screen_name);
-        if(!screenFromDOM)continue;
-        let isVisible = this.isElementInView(screenFromDOM, 'complete');
-        let partialVisible = this.isElementInView(screenFromDOM, 'partial');
+        let screenFromDom = document.getElementById(screen.screen_name);
+        if(!screenFromDom)continue;
+
+        let isVisible = this.isElementInView(screenFromDom, 'complete');
+        let partialVisible = this.isElementInView(screenFromDom, 'partial');
 
         if(isVisible || partialVisible){
            if (partialVisible && !screen.alreadyRendered){

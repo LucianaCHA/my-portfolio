@@ -111,9 +111,9 @@
   } */
   
   .primary-btn:hover {
-  color: aliceblue;
+  color: var(--white);
   border: 2px solid #ff5823;
-  background-color: #1f2235;
+  background-color: var(--bg);
   }
   
   .highlighted-btn {

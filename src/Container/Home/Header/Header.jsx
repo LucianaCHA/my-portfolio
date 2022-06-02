@@ -68,7 +68,7 @@ const switchScreen = (index, screen) =>{
 
                 </div>
                 <div className={headerOptions
-                ? 'header-options show-hamburguer-options' 
+                ? 'header-options show-hamburguer' 
                 : 'header-options'} >
                     {getHeaderOptions()}
                 </div>

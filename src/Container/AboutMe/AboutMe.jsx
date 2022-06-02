@@ -40,17 +40,18 @@ export default function AboutMe(props) {
   return (
     <div className={s.aboutMeContainer} id={props.id || ""}>
       <div className={s.aboutMeParent}>
+        <div className={s.aboutMeProfile}></div>
         <ScreenHeading title={"About Me"} subtitle={"Why me?"} />
         <div className={s.aboutMeCard}>
-          <div className={s.aboutMeProfile}></div>
+          
           <div className={s.aboutMeDetails}></div>
-          <span className={s.abouMeDescription}>
+          <span className={s.aboutMeDescription}>
             {SCREEN_CONSTANTS.description}
           </span>
-          <div className={s.abouMeHighlights}>
+          <div className={s.aboutMeHighlights}>
             <div className={s.highlightsHeading}>
               <span>{SCREEN_CONSTANTS.highlights.heading}</span>
-            </div>
+            </div> 
             {renderHighlights()}
           </div>
           <div className={s.aboutMeOptions}>

@@ -2,21 +2,20 @@ import React, { useState, useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animation";
-import js from '../../assets/Resume/Technologies/javascript.svg';
-import react from '../../assets/Resume/Technologies/react.svg';
-import redux from '../../assets/Resume/Technologies/redux.svg';
-import express from '../../assets/Resume/Technologies/express.svg';
-import node from '../../assets/Resume/Technologies/nodedotjs.svg';
-import postgresql from '../../assets/Resume/Technologies/postgresql.svg';
-import html from '../../assets/Resume/Technologies/html5.svg';
-import css from '../../assets/Resume/Technologies/css3.svg';
-import cssmodule from '../../assets/Resume/Technologies/cssmodules.svg';
-import sequelize from '../../assets/Resume/Technologies/sequelize.svg';
+import js from "../../assets/Resume/Technologies/javascript.svg";
+import react from "../../assets/Resume/Technologies/react.svg";
+import redux from "../../assets/Resume/Technologies/redux.svg";
+import express from "../../assets/Resume/Technologies/express.svg";
+import node from "../../assets/Resume/Technologies/nodedotjs.svg";
+import postgresql from "../../assets/Resume/Technologies/postgresql.svg";
+import html from "../../assets/Resume/Technologies/html5.svg";
+import css from "../../assets/Resume/Technologies/css3.svg";
+import cssmodule from "../../assets/Resume/Technologies/cssmodules.svg";
+import sequelize from "../../assets/Resume/Technologies/sequelize.svg";
 
 import "./Resume.css";
 
 const Resume = (props) => {
- 
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
@@ -74,8 +73,6 @@ const Resume = (props) => {
     { skill: "HTML 5", ratingPercentage: html },
     { skill: "CSS", ratingPercentage: css },
     { skill: "CSS Modules", ratingPercentage: cssmodule },
-
-    
   ];
 
   const projectsDetails = [
@@ -84,7 +81,7 @@ const Resume = (props) => {
       duration: { fromDate: "", toDate: "2021" },
       description:
         "A Personal Portfolio to share my details and projects at one place.",
-      subtitle: "Main technologies: React JS, Bootstrap"
+      subtitle: "Main technologies: React JS, Bootstrap",
     },
     {
       title: "Marvel App |Academic Project",
@@ -99,51 +96,51 @@ const Resume = (props) => {
       duration: { fromDate: "Abr.2022", toDate: "Abr.2022" },
       description:
         "SPA designed to consume poke API, save info in a database, create new pokemon, and record it in the DB. Other features like filters, sorting, etc.",
-      subtitle:
-        "Main technologies: React, PostgreSQL, Express Js, Node Js.",
+      subtitle: "Main technologies: React, PostgreSQL, Express Js, Node Js.",
     },
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
-    <ResumeHeading
+      <ResumeHeading
         heading={"Henry- Full Stack Web Developer Bootcamp"}
         subtitle={"FULL STACK WEB DEVELOPER BOOTCAMP"}
         fromDate={"2022"}
         toDate={"2022"}
       />
-      <br />
+
       <ResumeHeading
         heading={"National University of Quilmes, Argentina"}
         subtitle={"BIOTECHNOLOGY DEGREE"}
         fromDate={" "}
         toDate={"IN PROGRESS"}
       />
-      <br />
       <ResumeHeading
         heading={"Cacipra Institute"}
         subtitle={"PAS (Matriculated Insurance Agent) Mat SSN 94363"}
         fromDate={"2018"}
         toDate={"2019"}
       />
-      <br />
       <ResumeHeading
         heading={"Other certifications"}
-        subtitle={<a className= 'link' href="https://efset.org/cert/nVLXBK">English Level: EF SET Certificate C2:Proficient</a>
-        }   
-        
+        subtitle={
+          <a className="link" href="https://efset.org/cert/nVLXBK">
+            English Level: EF SET Certificate C2:Proficient
+          </a>
+        }
       />
       <ResumeHeading
-      
-        subtitle={<a className= 'link' href="https://www.freecodecamp.org/certification/fcc533a03e7-8d5f-4b8e-a7d8-f5efdfbdb745/responsive-web-design">FreeCodeCamp: Responsive Web Design</a>}
-        
-       
-        
+        heading={""}
+        subtitle={
+          <a
+            className="link"
+            href="https://www.freecodecamp.org/certification/fcc533a03e7-8d5f-4b8e-a7d8-f5efdfbdb745/responsive-web-design"
+          >
+            FreeCodeCamp: Responsive Web Design
+          </a>
+        }
       />
-     
-      
-</div>,
-    
+    </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
@@ -161,13 +158,16 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Develop and design React SPA that consumes Marvel Comics API. The purpose of the app was to offer the customer/visitor access to the catalog of comics and characters, and purchase a subscription for reading access.
+            - Develop and design React SPA that consumes Marvel Comics API. The
+            purpose of the app was to offer the customer/visitor access to the
+            catalog of comics and characters, and purchase a subscription for
+            reading access.
           </span>
-          <br />
+          <div className="experience-description">
           <span className="resume-description-text">
             - Plan and develop in frontend and collaborate in backend.
-          </span>                 
-          <br />
+          </span>
+          </div>
         </div>
       </div>
 
@@ -180,13 +180,15 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Collaborate with individuals and companies in the design of life and retirement policies for family and wealth protection.
+            - Collaborate with individuals and companies in the design of life
+            and retirement policies for family and wealth protection.
           </span>
-          <br />
+          
           <span className="resume-description-text">
-            - Manage and advice about liability insurance and supply the appropriate contracts for each need, for individuals and industry.
-          </span>                 
-          <br />
+            - Manage and advice about liability insurance and supply the
+            appropriate contracts for each need, for individuals and industry.
+          </span>
+        
         </div>
       </div>
     </div>,
@@ -198,12 +200,14 @@ const Resume = (props) => {
     >
       {programmingSkillsDetails.map((skill, index) => (
         <div className="skill-parent" key={index}>
-          
           <span>{skill.skill}</span>
           <div className="skill">
             <div>
-            <img style={{alignSelf: 'center'}} src={skill.ratingPercentage} alt="ratingPercentage" />
-           
+              <img
+                style={{ alignSelf: "center" }}
+                src={skill.ratingPercentage}
+                alt="ratingPercentage"
+              />
             </div>
           </div>
         </div>
@@ -295,7 +299,10 @@ const Resume = (props) => {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subtitle={"Lately academic and job experience info"} />
+        <ScreenHeading
+          title={"Resume"}
+          subtitle={"Lately academic and job experience info"}
+        />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

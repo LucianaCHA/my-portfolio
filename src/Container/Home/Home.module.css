@@ -3,6 +3,7 @@
     flex-direction : column;
     justify-content: space-between;
     min-height: 670px;
+    width: 100vw;
     background-image: url('../../assets/Home/bg.jpg');
 
 }

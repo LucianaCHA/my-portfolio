@@ -32,22 +32,23 @@
     padding: 30px;
   }
   .aboutMeDescription {
-    font-size: 12px;
-    margin: 80px 20px;
+    width: 80%;
+    font-size: 14px;
+   
   }
   .aboutMeHighlights {
     margin: 80px 20px;
   }
   .highlightsHeading {
     font-family: "Poppins Bold";
-    font-size: 14px;
+    font-size: 20px;
     margin: 0 0 5px 0;
   }
   .highlights {
     display: flex;
     align-items: center;
     margin: 5px 0;
-    font-size: 12px;
+    font-size: 16px;
   }
   .highlightsBlob {
     height: 12px;
@@ -58,9 +59,11 @@
   }
 
   
-  .aboutMeOptions .highlighted-btn {
-    margin: 0 0 0 30px;
+  .aboutMeOptions {
+    align-items: center;
+    margin: 5px 0;
   }
+  
   
   @media only screen and (max-width: 1110px) {
     .aboutMeParent {
@@ -75,9 +78,9 @@
         display: flex;
         flex-direction: column;
       }
-    .aboutMeOptions {
+    .aboutMeOptions{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
       }
   }
   @media only screen and (max-width: 466px) {

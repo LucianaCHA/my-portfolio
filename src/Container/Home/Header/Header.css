@@ -4,10 +4,14 @@
     height: 140px;
     color: var(--white);
 }
+.header-hamburguer{
+    display:none;
+    color: var(--white);
+}
 
 .header-parent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 90%;
@@ -15,16 +19,16 @@
 }
 
 .header-logo {
-    position: absolute;
-    margin-left: auto;
-    margin-top: 50px;
+    position: relative;
+    margin-left: 4vw;
+    margin-right: 8vw;
+    margin-top: 20px;
     background-image: url('../../../assets/Header/logo.jpg');
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
     opacity: 0.5;
-
     height: 40%;
     width: 8%;
     
@@ -47,20 +51,18 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
-    margin-right: 20px;
-    margin-left: 30px;
 }
 .header-hamburguer , .show-hamburguer-options{
-    opacity: 0; 
-    margin-top: 120px;
+    opacity: 1; 
+    margin-top: 0px;
     font-size: 30px;
     color: var(--white);
 }
 
-/* .header-option-separator{
+.header-option-separator{
     margin: 0 50px 0 0px;
     color: var(--white);
-} */
+}
 
 .selected-header-option {
     font-size: 16px;
@@ -99,9 +101,8 @@
         width: 100%;
         height: 100vh;
         justify-content: space-around;
-        background-color: var(--blue);
+        background-color: var(--bg);
         z-index: 1000;
-        opacity: 0.8;    
         transition: all 0.8s ease-out;
     }
     .header-option-separator{

@@ -14,15 +14,17 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: "hola aca cvuento algo de mi, tenfo que ensdar un pco ",
+    description: "Passionate about technology, meticulous and always learning more about my field to keep up to date and expand my skills.Full stack developer with knowledge of PERN with Redux. Strong professional willing to be an asset to an organization.",
     highlights: {
       bullets: [
-        "lño importante ",
-        "tecnologias",
-        "alguna cosa mas",
-        "super copada",
+        "Full Stack Development",
+        "Interactive Front End as per the design",
+        "React",
+        "Redux for State Management",
+        "Building REST API",
+        "Managing database",
       ],
-      heading: "HEre a few highlights",
+      heading: "Main technologies",
     },
   };
 
@@ -41,7 +43,7 @@ export default function AboutMe(props) {
     <div className={s.aboutMeContainer} id={props.id || ""}>
       <div className={s.aboutMeParent}>
         <div className={s.aboutMeProfile}></div>
-        <ScreenHeading title={"About Me"} subtitle={"Why me?"} />
+        <ScreenHeading title={"About Me"} subtitle={""} />
         <div className={s.aboutMeCard}>
           
           <div className={s.aboutMeDetails}></div>

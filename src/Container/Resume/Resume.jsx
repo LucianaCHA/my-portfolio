@@ -45,6 +45,7 @@ const Resume = (props) => {
         <div className="resume-sub-heading">
           <span>{props.subtitle ? props.subtitle : ""}</span>
         </div>
+        
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
         </div>
@@ -63,16 +64,15 @@ const Resume = (props) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: js },
-    { skill: "React JS", ratingPercentage: react },
-    { skill: "Redux", ratingPercentage: redux },
-    { skill: "Express JS", ratingPercentage: express },
-    { skill: "Node JS", ratingPercentage: node },
-    { skill: "PostgreSQL ", ratingPercentage: postgresql },
-    { skill: "Sequelize", ratingPercentage: sequelize },
-    { skill: "HTML 5", ratingPercentage: html },
-    { skill: "CSS", ratingPercentage: css },
-    { skill: "CSS Modules", ratingPercentage: cssmodule },
+    { skill: "JavaScript", tool: js },
+    { skill: "React JS", tool: react },
+    { skill: "Redux", tool: redux },
+    { skill: "Express JS", tool: express },
+    { skill: "Node JS", tool: node },
+    { skill: "PostgreSQL ", tool: postgresql },
+    { skill: "Sequelize", tool: sequelize },
+    { skill: "HTML 5", tool: html },
+    { skill: "CSS", tool: css },
   ];
 
   const projectsDetails = [
@@ -130,15 +130,12 @@ const Resume = (props) => {
         }
       />
       <ResumeHeading
-        heading={""}
-        subtitle={
-          <a
-            className="link"
+        subtitle={<a className="link"
             href="https://www.freecodecamp.org/certification/fcc533a03e7-8d5f-4b8e-a7d8-f5efdfbdb745/responsive-web-design"
           >
             FreeCodeCamp: Responsive Web Design
-          </a>
-        }
+          </a>}
+        
       />
     </div>,
 
@@ -159,18 +156,14 @@ const Resume = (props) => {
         <div className="experience-description">
           <span className="resume-description-text">
             - Develop and design React SPA that consumes Marvel Comics API. The
-            purpose of the app was to offer the customer/visitor access to the
+            purpose was to offer the customer/visitor access to the
             catalog of comics and characters, and purchase a subscription for
             reading access.
           </span>
-          <div className="experience-description">
-          <span className="resume-description-text">
-            - Plan and develop in frontend and collaborate in backend.
-          </span>
-          </div>
         </div>
-      </div>
 
+      </div>
+         
       <div className="experience-container">
         <ResumeHeading
           heading={"Self-Employed"}
@@ -182,15 +175,11 @@ const Resume = (props) => {
           <span className="resume-description-text">
             - Collaborate with individuals and companies in the design of life
             and retirement policies for family and wealth protection.
+            -Asessment about liability insurance for individuals and business.
           </span>
-          
-          <span className="resume-description-text">
-            - Manage and advice about liability insurance and supply the
-            appropriate contracts for each need, for individuals and industry.
-          </span>
-        
+        </div>  
+       
         </div>
-      </div>
     </div>,
 
     /* PROGRAMMING SKILLS */
@@ -205,8 +194,8 @@ const Resume = (props) => {
             <div>
               <img
                 style={{ alignSelf: "center" }}
-                src={skill.ratingPercentage}
-                alt="ratingPercentage"
+                src={skill.tool}
+                alt="tool"
               />
             </div>
           </div>

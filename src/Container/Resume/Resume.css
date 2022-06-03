@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: fit-content;
-  margin: 120px 0;
+  margin: 100px 0;
 }
 
 .resume-card {
@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 360px;
+  height: 380px;
   width: 100%;
 }
 
@@ -117,6 +117,7 @@
 
 .experience-description {
   max-width: 100%;
+  font-size: 12.5px;
 }
 
 .heading-bullet {
@@ -153,29 +154,23 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 50%;
+  width: 33%;
 }
 
 .programming-skills-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: -50px;
 }
 
-.skill-percentage {
+.skill {
   position: relative;
   height: 15px;
   width: 70%;
-  background-color: #ff5823;
-}
-
-.skill-percentage .active-percentage-bar {
-  height: 15px;
-  transition: 0.8s ease;
-  position: absolute;
-  background-color: #1f2235;
+ 
 }
 
 .skill-parent span {
@@ -245,6 +240,23 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .resume-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 100%;
+  }
+  .resume-card {
+    width: 100%;
+  }
+
+  .resume-bullet-details {
+    padding: 0 0 0 70px;
+  }
+}
+
+@media only screen and (max-width: 467px) {
   .resume-screen-container {
     display: flex;
     flex-direction: column;

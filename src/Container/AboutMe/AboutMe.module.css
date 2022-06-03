@@ -21,7 +21,6 @@
   .aboutMeProfile {
     opacity: 0.5;
     width: 50%;
-    background-image: url("../../assets/AboutMe/me.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

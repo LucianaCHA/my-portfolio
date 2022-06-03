@@ -57,7 +57,7 @@ export default function AboutMe(props) {
             {renderHighlights()}
           </div>
           <div className={s.aboutMeOptions}>
-            <button className="btn primary-btn">Hire Me</button>
+            <button className="btn primary-btn">Contact Me</button>
             <a href="LucianaChamorro-CV.pdf" download="LucianaChamorro-CV.pdf">
               <button className="btn highlighted-btn">Get CV</button>
             </a>

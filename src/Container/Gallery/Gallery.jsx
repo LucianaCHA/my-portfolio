@@ -19,13 +19,15 @@ export default function Gallery(props) {
 
   const options = {
     loop: true,
-    margin: 0,
+    margin: 5,
     nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
     autoplay: true,
-    smartSpeed: 2000,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2500,
+    smartSpeed: 1800,
     responsive: {
       0: {
         items: 1,
@@ -37,7 +39,7 @@ export default function Gallery(props) {
         items: 3,
       },
     },
-  };
+  };  
 
   const pokemon = [
     { img: "./img/pokemon1.jpg", caption: "Landing page" },

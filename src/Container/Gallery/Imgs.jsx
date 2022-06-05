@@ -9,15 +9,12 @@ export default function Imgs({ props }) {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} pause= {"hover"}>
       {props.map((el, index) => {
         return (
           <Carousel.Item>
             <img style={{height: '200px', width:'100%' }}src={el.img} alt={el.caption} />
-            <Carousel.Caption>
-              <h5>{el.caption}</h5>
-            </Carousel.Caption>
-          </Carousel.Item>
+              </Carousel.Item>
         );
       })}
     </Carousel>

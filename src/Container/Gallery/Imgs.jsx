@@ -13,7 +13,7 @@ export default function Imgs({ props }) {
       {props.map((el, index) => {
         return (
           <Carousel.Item>
-            <img className="d-block w-100" src={el.img} alt={el.caption} />
+            <img style={{height: '200px', width:'100%' }}src={el.img} alt={el.caption} />
             <Carousel.Caption>
               <h5>{el.caption}</h5>
             </Carousel.Caption>

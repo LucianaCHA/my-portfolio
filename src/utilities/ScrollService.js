@@ -11,14 +11,15 @@ export default class ScrollService {
     constructor() {
         window.addEventListener("scroll", this.checkCurrentScreenUnderViewPort);
     }
-    scrollToHireMe = () => {
-        let contactMeScreen = document.getelementById('Contact Me');
+    scrollToContactMe = () => {
+        let contactMeScreen = document.getElementById('Contact Me');
         if(!contactMeScreen) return;
         contactMeScreen.scrollIntoView({behavior: 'smooth'});
     }
     scrollToHome = () => {
-        let homeScreen = document.getelementById('Home');
-        if(!homeScreen)return;
+        let homeScreen = document.getElementById('Home');
+        console.log('click en boton to home cuanto vale homeScreen', homeScreen);
+        if(!homeScreen) return;
         homeScreen.scrollIntoView({behavior: 'smooth'});
     }
 

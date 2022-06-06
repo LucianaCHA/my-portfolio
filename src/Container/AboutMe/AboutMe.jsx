@@ -5,8 +5,9 @@ import Animations from "../../utilities/Animation";
 
 import s from "./AboutMe.module.css";
 export default function AboutMe(props) {
+  
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
 
@@ -40,7 +41,8 @@ export default function AboutMe(props) {
   };
 
   return (
-    <div className={s.aboutMeContainer} id={props.id || ""}>
+    <div className='screen fade-in' id={props.id}>
+    <div className={s.aboutMeContainer} >
       <div className={s.aboutMeParent}>
         <div className={s.aboutMeProfile}></div>
         <ScreenHeading title={"About Me"} subtitle={""} />
@@ -57,13 +59,16 @@ export default function AboutMe(props) {
             {renderHighlights()}
           </div>
           <div className={s.aboutMeOptions}>
-            <button className="btn primary-btn">Contact Me</button>
+            <button className="btn primary-btn"
+            onClick={() => ScrollService.scrollHandler.scrollToContactMe()}
+            >Contact Me</button>
             <a href="LucianaChamorro-CV.pdf" download="LucianaChamorro-CV.pdf">
               <button className="btn highlighted-btn">Get CV</button>
             </a>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }

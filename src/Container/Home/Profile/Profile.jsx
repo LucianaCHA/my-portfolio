@@ -2,6 +2,7 @@ import React from "react";
 import { TypingName } from "./TypingName";
 
 import s from "./Profile.module.css";
+import ScrollService from "../../../utilities/ScrollService";
 
 export const Profile = () => {
   return (
@@ -43,7 +44,9 @@ export const Profile = () => {
             </span>
           </div>
           <div className={s.profileOptions}>
-            <button className="btn primary-btn">Contact Me</button>
+            <button className="btn primary-btn"
+              onClick={() => ScrollService.scrollHandler.scrollToContactMe()}
+            >Contact Me</button>
             <a href="LucianaChamorro-CV.pdf" download="LucianaChamorro-CV.pdf">
               <button className="btn highlighted-btn">Get CV</button>
             </a>

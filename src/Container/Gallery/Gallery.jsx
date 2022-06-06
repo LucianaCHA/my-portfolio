@@ -11,7 +11,7 @@ import Imgs from "./Imgs";
 
 export default function Gallery(props) {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -26,8 +26,8 @@ export default function Gallery(props) {
     dots: true,
     autoplay: true,
     autoplayHoverPause: true,
-    autoplayTimeout: 2500,
-    smartSpeed: 1800,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
     responsive: {
       0: {
         items: 1,
@@ -39,7 +39,7 @@ export default function Gallery(props) {
         items: 3,
       },
     },
-  };  
+  };
 
   const pokemon = [
     { img: "./img/pokemon1.jpg", caption: "Landing page" },
@@ -62,9 +62,15 @@ export default function Gallery(props) {
   ];
 
   return (
+    <div className='screen fade-in' id={props.id}>
     <div className={s.galleryContainer}>
-      <ScreenHeading title={"Projects Gallery"} subtitle={"What have I learnt doing it?"} />
-      <section className={s.gallerySection} id={props.id || ""}>
+    
+      <ScreenHeading
+        title={"Projects Gallery"}
+        subtitle={"What have I learnt doing it?"}
+      />
+     
+      <section className={s.gallerySection} >
         <div className={s.container}>
           <div className={s.row}>
             <OwlCarousel
@@ -80,9 +86,8 @@ export default function Gallery(props) {
                 <div className={s.galleryItem}>
                   <h6 className={s.galleryLastProject}>Newest!!</h6>
                   <div className={s.galleryComment}>
-                  <h3 className={s.galleryTitle}>Current webpage</h3>
+                    <h3 className={s.galleryTitle}>Current webpage</h3>
                     <p>
-                      
                       <a href="https://github.com/LucianaCHA">
                         <i className="bi bi-arrow-up-right-circle-fill"></i>
                       </a>
@@ -102,12 +107,15 @@ export default function Gallery(props) {
               <div className="col-lg-12">
                 <div className={s.galleryItem}>
                   <div className={s.galleryComment}>
+                    <h3 className={s.galleryTitle}> Pokemon App</h3>
                     <p>
-                      <h3 className={s.galleryTitle}> Pokemon App</h3>
                       <a href="https://github.com/LucianaCHA">
                         <i className="bi bi-arrow-up-right-circle-fill"></i>
                       </a>
-                      This project allowed me to integrate and develop the PERN stack using. Furthermore, this challenged me to implement CSS exclusively for styles. Also, learning a lot about the pokemon world!
+                      This project allowed me to integrate and develop the PERN
+                      stack using. Furthermore, this challenged me to implement
+                      CSS exclusively for styles. Also, learning a lot about the
+                      pokemon world!
                     </p>
                   </div>
                   <div className={s.info}>
@@ -121,12 +129,15 @@ export default function Gallery(props) {
               <div className="col-lg-12">
                 <div className={s.galleryItem}>
                   <div className={s.galleryComment}>
+                    <h3 className={s.galleryTitle}> Marvel+</h3>
                     <p>
-                      <h3 className={s.galleryTitle}> Marvel+</h3>
                       <a href="https://github.com/LucianaCHA">
                         <i className="bi bi-arrow-up-right-circle-fill"></i>
                       </a>
-                      For this project, I took part in a team of five. I enjoyed the teamwork, and I learned a lot about e-commerce technologies like payment gateway, login, authentication, and admins module.
+                      For this project, I took part in a team of five. I enjoyed
+                      the teamwork, and I learned a lot about e-commerce
+                      technologies like payment gateway, login, authentication,
+                      and admins module.
                     </p>
                   </div>
                   <div className={s.info}>
@@ -138,6 +149,15 @@ export default function Gallery(props) {
           </div>
         </div>
       </section>
+      
+      <div className={s.footerImg}>
+        <img
+          src={require("../../assets/Home/shape-bg.png")}
+          alt="Phot0 not responding"
+        />
+      
     </div>
+    </div>
+    </div> 
   );
 }

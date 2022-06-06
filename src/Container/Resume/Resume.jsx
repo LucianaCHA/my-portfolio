@@ -30,7 +30,7 @@ const Resume = (props) => {
   /* REUSABLE MINOR COMPONENTS */
   const ResumeHeading = (props) => {
     return (
-      <div className="resume-heading">
+      <div className="resume-heading ">
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>

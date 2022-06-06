@@ -9,11 +9,11 @@ export default function Imgs({ props }) {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} pause= {"hover"}>
+    <Carousel activeIndex={index} onSelect={handleSelect} pause= {'hover'}>
       {props.map((el, index) => {
         return (
-          <Carousel.Item>
-            <img style={{height: '200px', width:'100%' }}src={el.img} alt={el.caption} />
+          <Carousel.Item interval={700} key={index}>
+            <img style={{height: '90%', width:'100%', borderRadius:'50px 50px 50px 0 ', borderBottom:'2px solid var(--dark-orange)' }}src={el.img} alt={el.caption} />
               </Carousel.Item>
         );
       })}

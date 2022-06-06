@@ -1,0 +1,164 @@
+.mainContainer{
+    min-height: 100vh;
+
+}
+
+.centralForm{
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    margin : 0 auto;
+    background-color: var(--bg);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.centralForm h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--lavande);
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+
+}
+
+.backForm{
+    max-width: 380px;
+    margin: 0 auto;    
+}
+
+.backForm .imgBack{
+    width: 100%;
+    margin-top: 20px;
+     
+}
+
+.imgBack h5 {
+    color: var(--lavande);
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    opacity: 0.5;    
+}
+.backForm .imgBack img{
+    width: 100%;
+    opacity: 0.5;
+    height: auto;
+}
+
+.centralForm form {
+    width: auto;
+    display: flex;
+    color: darkgrey;
+    padding: 15px;
+    flex-direction: column;
+    margin-top: 52px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+form p{
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--dark-orange);
+    letter-spacing: 0.4rem;
+    font-family: 'Popins Bold';
+}
+form label{
+    margin-bottom: 5px;
+    color: black;
+    letter-spacing: 0.2rem;
+}
+form input, textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--dark-orange);
+    margin-bottom: 22px;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;    
+    background-color: rgb(247, 236, 236);
+    transition: 0.3s;
+
+}
+
+textarea:focus{
+    border : 2px solid var(--blue);
+    background-color: aliceblue;
+}
+input:focus{
+    border : 2px solid var(--blue);
+    background-color: aliceblue;
+}
+
+.imgBack{
+    flex:1;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.form{
+    flex:0.9;    
+}
+
+form button {
+    margin-top: 15px;
+    padding: 5px;
+    outline: none;
+    width: 900px;
+    color: rgb(230, 227, 227);
+    border: 2px solid #ff5823;
+    font-size: 12px;
+    border-radius: 19px;
+    background-color: #1f2235;
+    font-size: 18px;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form button:hover {
+    background-color: #1f2235;
+    transition: all ease 1s;
+    border: 2px solid #1f2235;
+  }
+  
+  button .load {
+    width: 100%;
+  }
+  
+  button .load img {
+    width: 60px;
+    color: rgb(0, 13, 128);
+  }
+  .col i {
+    padding: 7px;
+    color: #fff;
+  }
+  .col i:hover {
+    transform: scale(1.5);
+  }
+@media screen and (min-width: 940px){
+    .backForm{
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        }
+        .imgbBack{
+            flex:1;
+            align-self: center;
+            margin-right: 20px;
+        }
+        form{
+            flex: 0.9;
+        }
+    
+}
+
+@media screen and (max-width: 414px) {
+    .central-form h2 {
+      font-size: 16px;
+    }
+  }

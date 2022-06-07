@@ -109,7 +109,7 @@ export default function ContactMe(props) {
               </div>
               <div className={s.backForm}>
                 <div className={s.imgBack}>
-                  <h5> Write Your Message Here!</h5>
+                  <h5> Send your message here!</h5>
                   <img src ={imgBack} alt='Not available'/>
                 </div>
                 <form onSubmit={submitForm}>

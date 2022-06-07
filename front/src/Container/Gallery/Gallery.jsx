@@ -5,9 +5,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animation";
-
 import s from "./Gallery.module.css";
-import Imgs from "./Imgs";
+import Imgs from './Imgs';
 
 export default function Gallery(props) {
   let fadeInScreenHandler = (screen) => {
@@ -42,7 +41,7 @@ export default function Gallery(props) {
   };
 
   const pokemon = [
-    { img: "./img/pokemon1.jpg", caption: "Landing page" },
+    { img: "./img/pokemon1.png", caption: "Landing page" },
     { img: "./img/pokemon2.jpg", caption: "Home page" },
     { img: "./img/pokemon3.jpg", caption: "Pokemon detail" },
     { img: "./img/pokemon4.jpg", caption: "Creation Form" },

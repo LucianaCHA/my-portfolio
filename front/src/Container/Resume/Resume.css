@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: var(--bg);
   height: 40px;
   margin: 15px 0;
   padding: 0 8px;
@@ -79,7 +79,7 @@
   width: 34px;
   height: 100%;
   z-index: 1;
-  background-color: var(--secondary);
+  background-color: var(--bg);
   position: absolute;
   border-end-end-radius: 25px;
   border-start-end-radius: 25px;

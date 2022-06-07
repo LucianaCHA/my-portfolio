@@ -1,0 +1,71 @@
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.galleryItem {
+    padding: 15px 10px 10px 25px;
+    z-index: -1;
+    height: 500px;
+
+}
+
+.gallerySection {
+    width: 80%;
+    height: 90%;
+    box-shadow: 1px 3px 1px var(--secondary);
+}
+
+.galleryLastProject {
+    font-family: 'Poppins SemiBold';
+    font-size: 18px;
+    color: var(--dark-orange);
+}
+
+.galleryComment p {
+    padding-bottom: 25px;
+    font-family: 'Poppins Light';
+    font-size: 15px;
+    height: 40%;
+    width: 95%;
+}
+
+.galleryTitle {
+    font-family: 'Poppins SemiBold';
+    font-size: 24px;
+    color: var(--secondary);
+}
+
+.info {
+    width: 95%;
+}
+
+.info img {
+    width: 100%;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.footerImg {
+    background-color: var(--primary);
+    width: 100%;
+    height: 130px;
+    max-width: 1920px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/Home/shape-bg.png');
+    margin-top: -20px;
+
+}
+
+@media only screen and (max-width : 770px ) {
+    .galleryItem{
+    padding: 15px 10px 10px 25px;
+    z-index: -1;
+    height: 600px;
+    }
+    
+}

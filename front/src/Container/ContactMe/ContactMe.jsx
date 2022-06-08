@@ -9,7 +9,6 @@ import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animation';
 
 import s from './ContactMe.module.css'
-import { faMailReply } from '@fortawesome/free-solid-svg-icons';
 
 export default function ContactMe(props) {
 

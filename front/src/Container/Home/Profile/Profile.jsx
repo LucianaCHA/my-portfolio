@@ -17,10 +17,10 @@ export const Profile = () => {
               <a href="https://github.com/LucianaCHA">
                 <i className="bi bi-github"></i>
               </a>
-              <a href="Luciana Chamorro#9676">
-                <i className="bi bi-discord"></i>
+            {/*  <a href="">
+                <i className="bi bi-envelope"></i>
               </a>
-              {/* <a href="https://www.linkedin.com/in/juan-jose-gonzalez-gonzalez-b9a8a11b3/">
+               <a href="">
               <i className="bi bi-instagram"></i>
             </a> */}
             </div>

@@ -7,6 +7,20 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animation";
 import s from "./Gallery.module.css";
 import Imgs from './Imgs';
+import pokemon1 from '../../img/pokemon1.JPG';
+import pokemon2 from '../../img/pokemon2.JPG';
+import pokemon3 from '../../img/pokemon3.JPG';
+import pokemon4 from '../../img/pokemon4.JPG';
+
+import marvel1 from '../../img/marvel1.jpg';
+import marvel2 from '../../img/marvel2.jpg';
+import marvel3 from '../../img/marvel3.jpg';
+import marvel4 from '../../img/marvel4.jpg';
+
+import portfolio1 from '../../img/portfolio1.png';
+import portfolio2 from '../../img/portfolio2.png';
+import portfolio3 from '../../img/portfolio3.png';
+
 
 export default function Gallery(props) {
   let fadeInScreenHandler = (screen) => {
@@ -41,23 +55,23 @@ export default function Gallery(props) {
   };
 
   const pokemon = [
-    { img: "./img/pokemon1.png", caption: "Landing page" },
-    { img: "./img/pokemon2.jpg", caption: "Home page" },
-    { img: "./img/pokemon3.jpg", caption: "Pokemon detail" },
-    { img: "./img/pokemon4.jpg", caption: "Creation Form" },
+    { img: pokemon1, caption: "Landing page" },
+    { img: pokemon2, caption: "Home page" },
+    { img: pokemon3, caption: "Pokemon detail" },
+    { img: pokemon4, caption: "Creation Form" },
   ];
   const portfolio = [
-    { img: "./img/portfolio1.jpg", caption: "Landing page" },
-    { img: "./img/portfolio2.jpg", caption: "Home page" },
+    { img: portfolio1, caption: "Hellopage" },
+    { img: portfolio2, caption: "Resume section" },
+    { img: portfolio3, caption: "Contact section" },
   ];
 
   const marvel = [
-    { img: "./img/marvel1.jpg", caption: "Landing page" },
-    { img: "./img/marvel2.jpg", caption: "marvel2" },
-    { img: "./img/marvel3.jpg", caption: "Home marvel3" },
-    { img: "./img/marvel4.jpg", caption: "Home marvel4" },
-    { img: "./img/marvel4.png", caption: "Home marvel5" },
-    { img: "./img/marvel5.png", caption: "Home marvel6" },
+    { img: marvel1, caption: "Homepage" },
+    { img: marvel2, caption: "Favourites" },
+    { img: marvel3, caption: "Comics" },
+    { img: marvel4, caption: "Detail comic" },
+
   ];
 
   return (
@@ -108,11 +122,11 @@ export default function Gallery(props) {
                   <div className={s.galleryComment}>
                     <h3 className={s.galleryTitle}> Pokemon App</h3>
                     <p>
-                      <a href="https://github.com/LucianaCHA">
+                      <a href="http://pi-pokemon-indol.vercel.app">
                         <i className="bi bi-arrow-up-right-circle-fill"></i>
                       </a>
                       This project allowed me to integrate and develop the PERN
-                      stack using. Furthermore, this challenged me to implement
+                      stack. Furthermore, this challenged me to implement
                       CSS exclusively for styles. Also, learning a lot about the
                       pokemon world!
                     </p>
@@ -134,9 +148,9 @@ export default function Gallery(props) {
                         <i className="bi bi-arrow-up-right-circle-fill"></i>
                       </a>
                       For this project, I took part in a team of five. I enjoyed
-                      the teamwork, and I learned a lot about e-commerce
+                      the teamwork, and I learned (and implemented) a lot about e-commerce
                       technologies like payment gateway, login, authentication,
-                      and admins module.
+                      and admins features.
                     </p>
                   </div>
                   <div className={s.info}>

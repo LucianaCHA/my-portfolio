@@ -202,7 +202,7 @@
   }
 }
 
-/* IPAD RESPONSIVENESS */
+/* IPAD  */
 @media only screen and (max-width: 1023px) {
   .resume-content {
     display: flex;
@@ -247,6 +247,12 @@
     height: 400px;
     width: 100%;
   }
+  .screen-subtitle {
+    font-size: 12px;
+    font-family: "Poppins SemiBold";
+    color: var(--black);
+    margin: 10px 0 0 0;
+  }
   .resume-card {
     width: 100%;
   }
@@ -260,16 +266,47 @@
   .resume-screen-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 400px;
     width: 100%;
+    height: max-content;
+    margin-bottom: 15px;
   }
   .resume-card {
     width: 100%;
+    
   }
+  .experience-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: -10px;
+    margin-bottom: 10px;
+  
+  }
+  /* .resume-description-text{
+    font-size: 9.5px;
+    margin-bottom: 5px;
+  } */
 
+ 
   .resume-bullet-details {
     padding: 0 0 0 70px;
   }
+ 
+  .skill-parent span{
+    visibility: hidden;
+  }
+  .skill-parent span:hover:after{
+    visibility: visible;
+    
+  }
+
+  .programming-skills-container{
+    width: 100%;
+    margin : 20px 10px 60px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 4rem;
+   }
 }
 

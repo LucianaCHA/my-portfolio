@@ -79,7 +79,7 @@ const Resume = (props) => {
       title: "Personal Portfolio Website",
       duration: { fromDate: "", toDate: "2021" },
       description:
-        "A Personal Portfolio to share my details and projects at one place.",
+        "A Personal Portfolio to share my projects and experience at one place.",
       subtitle: "Main technologies: React JS, Bootstrap, Nodemailer",
     },
     {
@@ -181,7 +181,7 @@ const Resume = (props) => {
         </div>
     </div>,
 
-    /* PROGRAMMING SKILLS */
+    /* SKILLS */
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
@@ -228,7 +228,7 @@ const Resume = (props) => {
       />
       <ResumeHeading
         heading="Videogames"
-        description="What can I say... I love gaming since ever since Pc games used to run from a 5 1/4 diskette."
+        description="What can I say... I love gaming since ever! since Pc games used to run from a 5 1/4 diskette."
       />
     </div>,
   ];

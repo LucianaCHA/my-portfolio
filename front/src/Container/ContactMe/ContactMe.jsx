@@ -92,7 +92,7 @@ export default function ContactMe(props) {
         <div className={s.col}>
         <h2 className={s.title}>
         <ReactTypingEffect
-           text= {['Send me a line📧.' ,'To collaborate🙌.', 'Say Hello👋!' ]}
+           text= {['Send me a line📧.' ,'To collaborate🙌.', 'To Say Hello👋!' ]}
 
            />
         </h2>

@@ -144,7 +144,7 @@ export default function Gallery(props) {
                   <div className={s.galleryComment}>
                     <h3 className={s.galleryTitle}> Marvel+</h3>
                     <p>
-                      <a href="https://github.com/LucianaCHA">
+                      <a href="https://github.com/LucianaCHA/Final-Project">
                         <i className="bi bi-arrow-up-right-circle-fill"></i>
                       </a>
                       For this project, I took part in a team of five. I enjoyed

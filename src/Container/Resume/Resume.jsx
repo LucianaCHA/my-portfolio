@@ -56,10 +56,10 @@ const Resume = (props) => {
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
+    { label: "Other certifications", logoSrc: "interests.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   //here we have
@@ -121,8 +121,19 @@ const Resume = (props) => {
         fromDate={"2018"}
         toDate={"2019"}
       />
-      <ResumeHeading
-        heading={"Other certifications"}
+      
+    </div>,
+
+        /* Interests */
+        <div className="resume-screen-container" key="interests">
+        <ResumeHeading
+          heading="Keep learning"
+          description="I enjoy learning new things I like to feel challenged about that. And when I have the opportunity to teach others what I know, I appreciate it. Sharing is the clue!."
+        />
+        
+
+<ResumeHeading
+        heading={"English proficiency"}
         subtitle={
           <a className="link" href="https://efset.org/cert/nVLXBK">
             English Level: EF SET Certificate C2:Proficient
@@ -137,7 +148,15 @@ const Resume = (props) => {
           </a>}
         
       />
-    </div>,
+      <ResumeHeading
+        subtitle={<a className="link"
+            href="https://www.freecodecamp.org/certification/fcc533a03e7-8d5f-4b8e-a7d8-f5efdfbdb745/responsive-web-design"
+          >
+            FreeCodeCamp: Responsive Web Design
+          </a>}
+        
+      />
+      </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
@@ -217,21 +236,7 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* Interests */
-    <div className="resume-screen-container" key="interests">
-      <ResumeHeading
-        heading="Reading"
-        description="I read academic books or papers, and I love literature. Any book that falls in my hand, I´ll give it a chance. It´s great to being lost in a good book. I love reading."
-      />
-      <ResumeHeading
-        heading="Learning and teaching"
-        description=" I enjoy learning new things I like to feel challenged about that. And when I have the opportunity to teach others what I know, I appreciate it. Sharing is the clue!"
-      />
-      <ResumeHeading
-        heading="Videogames"
-        description="What can I say... I love gaming since ever since Pc games used to run from a 5 1/4 diskette."
-      />
-    </div>,
+
   ];
 
   const handleCarousal = (index) => {
